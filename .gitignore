@@ -1,3 +1,5 @@
 build/
 nbproject/
 node_modules/
+**/.sass-cache/
+.sencha_backup

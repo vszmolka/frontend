@@ -771,7 +771,9 @@ Ext.ClassManager.addNameAlternateMappings({
   "Ext.viewport.WindowsPhone": [
     "Ext.viewport.WP"
   ],
-  "TouchApp.view.Main": []
+  "TouchApp.view.Carousel": [],
+  "TouchApp.view.Main": [],
+  "TouchApp.view.form": []
 });
 
 Ext.ClassManager.addNameAliasMappings({
@@ -1727,8 +1729,14 @@ Ext.ClassManager.addNameAliasMappings({
   "Ext.viewport.Ios": [],
   "Ext.viewport.Viewport": [],
   "Ext.viewport.WindowsPhone": [],
+  "TouchApp.view.Carousel": [
+    "widget.MyCarousel"
+  ],
   "TouchApp.view.Main": [
     "widget.main"
+  ],
+  "TouchApp.view.form": [
+    "widget.form"
   ]
 });
 
