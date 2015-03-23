@@ -9,6 +9,7 @@
 Ext.define('TouchApp.view.Carousel', {
     extend: 'Ext.Carousel',
     xtype: 'MyCarousel',
+    ui: 'custom',
     /**
      * This class do the hard work of the managing the content of the carousel.
      * 

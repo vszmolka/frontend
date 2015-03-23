@@ -70,7 +70,7 @@ Ext.application({
         // Initialize the main view
         Ext.onReady(function () {
             Ext.Loader.loadScriptFile(
-                    'http://127.0.0.1/backend/ext-direct/getConfig',
+                    'http://steveetm.hu/backend/ext-direct/getConfig',
                     Ext.bind(me.onDirectApiLoaded, me),
                     Ext.bind(me.onDirectApiFailed, me)
                     );

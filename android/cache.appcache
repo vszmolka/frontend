@@ -1,6 +1,10 @@
 CACHE MANIFEST
 # b9578a3ce4dae03913e7e1e5e332c28ed620e6db
 index.html
+# ba150724e7e40c27eb68e974ff3cae17601ac24a
+resources/css/app.css
+# db153589f3bde98b565487f4ed38bbeea18e40d9
+app.js
 
 
 FALLBACK:
