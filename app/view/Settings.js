@@ -1,5 +1,9 @@
+/**
+ * This is the settings page, where user can set a global filter about providers.
+ *
+ */
 Ext.define('TouchApp.view.Settings', {
-    extend: 'Ext.form.Panel',
+    extend: 'Ext.Container',
     xtype: 'Settings',
     requires: ['TouchApp.store.Providers'],
     config: {
@@ -8,25 +12,23 @@ Ext.define('TouchApp.view.Settings', {
             type: 'vbox'
 
         },
+        flex: 1,
+        scrollable: false,
+
         items: [
-            {
-                xtype: 'label',
-                html: 'Show only these:'
-            },
             {
                 name: 'name',
                 xtype: 'list',
-                fieldLabel: 'Show only these providers',
                 flex: 1,
-                scrollable: false,
                 mode: 'MULTI',
+                itemId: 'providerSelect',
                 listeners: {
-                    selectionchange: function (list, records) {
-                        var names = [];
-                        Ext.Array.each(records, function (item) {
-                            names.push('<li>' + item.data.name + '</li>');
-                        }); // each()
-                        Ext.Msg.alert('You selected ' + records.length + ' item(s)', '<ul>' + names.join('') + '</ul>');
+
+                    initialize: function () {
+                        var me = this;
+                        //Load the store with the cached data.
+                        var Providers= Ext.JSON.decode(localStorage.getItem('ProvidersCache'));
+                        me.getStore().loadData(Providers);
                     }
                 },
                 store: Ext.create('TouchApp.store.Providers'),
@@ -37,17 +39,8 @@ Ext.define('TouchApp.view.Settings', {
 
                 },
 
-                itemTpl: '{name}',
-                initialize: function () {
-                    var me = this;
-                    me.getStore().load();
-                    debugger;
-                }
-            },
-            {
-                xtype: 'button',
-                text: 'Submit',
-                ui: 'confirm'
+                itemTpl: '{name}'
+
             }
         ]
     }

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>The source code</title>
+  <link href="../resources/prettify/prettify.css" type="text/css" rel="stylesheet" />
+  <script type="text/javascript" src="../resources/prettify/prettify.js"></script>
+  <style type="text/css">
+    .highlight { display: block; background-color: #ddd; }
+  </style>
+  <script type="text/javascript">
+    function highlight() {
+      document.getElementById(location.hash.replace(/#/, "")).className = "highlight";
+    }
+  </script>
+</head>
+<body onload="prettyPrint(); highlight();">
+  <pre class="prettyprint lang-js"><span id='TouchApp-view-Settings'>/**
+</span> * This is the settings page, where user can set a global filter about providers.
+ *
+ */
+Ext.define('TouchApp.view.Settings', {
+    extend: 'Ext.Container',
+    xtype: 'Settings',
+    requires: ['TouchApp.store.Providers'],
+    config: {
+<span id='TouchApp-view-Settings-cfg-title'>        title: 'Global preferences',
+</span><span id='TouchApp-view-Settings-cfg-layout'>        layout: {
+</span>            type: 'vbox'
+
+        },
+<span id='TouchApp-view-Settings-cfg-flex'>        flex: 1,
+</span><span id='TouchApp-view-Settings-cfg-scrollable'>        scrollable: false,
+</span>
+<span id='TouchApp-view-Settings-cfg-items'>        items: [
+</span>            {
+                name: 'name',
+                xtype: 'list',
+                flex: 1,
+                mode: 'MULTI',
+                itemId: 'providerSelect',
+                listeners: {
+
+                    initialize: function () {
+                        var me = this;
+                        //Load the store with the cached data.
+                        var Providers= Ext.JSON.decode(localStorage.getItem('ProvidersCache'));
+                        me.getStore().loadData(Providers);
+                    }
+                },
+                store: Ext.create('TouchApp.store.Providers'),
+                config: {
+
+                    itemId: 'Providers',
+                    itemTpl: '{name}'
+
+                },
+
+                itemTpl: '{name}'
+
+            }
+        ]
+    }
+});</pre>
+</body>
+</html>

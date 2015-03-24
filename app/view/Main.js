@@ -1,30 +1,6 @@
 /**
- * An example class showcasing the features of JSDuck.
+ * This is our main view, where a tabpanel holds all of the components.
  *
- * **Markdown** is supported thoughout the [docs][1].
- *
- * Link to {@link Ext.form.field.Text external class} and
- * {@link Ext.form.field.Text#reset its method}.
- * Link to {@link #setSize method of this class}.
- *
- * {@img some/path.png Alt text}
- *
- * An embedded live example:
- *
- *     @example
- *     Ext.create('Ext.master.Switch', {
- *         text: 'Click me, please!',
- *         handler: function() {
- *             alert('You clicked me!')
- *         }
- *     });
- *
- * **Note:** this is not a fully working example. When you run it
- * through JSDuck you will get warnings about a lot of missing classes
- * that this example class references, additionally it doesn't make
- * sense for singleton class to have static methods.
- *
- * [1]: http://docs.sencha.com/ext-js/4.0/
  */
 
 Ext.define('TouchApp.view.Main', {
@@ -35,11 +11,33 @@ Ext.define('TouchApp.view.Main', {
         'Ext.Video',
         'Ext.carousel.Carousel',
         'TouchApp.view.Carousel',
-        'TouchApp.view.MyGrid',
         'TouchApp.view.DepartureList',
-        'TouchApp.view.Settings'
+        'TouchApp.view.Settings',
+        'TouchApp.store.Stations'
     ],
     config: {
+        listeners: {
+            /**
+             * We have to "disable" the last tab, as it only servers as a download button. So, if the clicked tab is the last, prevent the setActiveItem to finish.
+             * @event
+             */
+            activeitemchange: {
+                order: 'before',
+                fn: function (tabpanel, curIdx, oldIdx) {
+                    console.log('tabpanelchange');
+                    if (curIdx.config.itemId=='downloadData') {
+                        TouchApp.app.getApplication().preCacheStores(function() {
+                            Ext.Msg.alert('Refreshed every store');
+                        },function() {
+                            Ext.Msg.alert('Failed to download new data','Please check your network connection');
+                        });
+                        return false;
+                    }
+                }
+
+            }
+        },
+
         tabBarPosition: 'bottom',
         items: [{
             title: 'Departures',
@@ -55,8 +53,23 @@ Ext.define('TouchApp.view.Main', {
             items: [{
                 docked: 'top',
                 xtype: 'titlebar',
-                title: 'Deparutes'
-            },{
+                //This is not the best place for this nor the best method. The controller should have a common title generator function.
+                title: function() { var postfix = '';
+
+                    var date = new Date()
+                    postfix = ' after ' + ('0' + date.getHours()).slice(-2) + ':' + ('0' + date.getMinutes()).slice(-2) + ':' + ('0' + date.getSeconds()).slice(-2)
+
+                    return 'Departures today, after ' + postfix}()
+            }, {
+                docked: 'top',
+                xtype: 'selectfield',
+                fieldLabel: 'Departure',
+                itemId: 'stationSelect',
+                store: Ext.create('TouchApp.store.Stations'),
+                displayField: 'name',
+                valueField: 'idStation',
+                height: 25
+            }, {
                 xtype: 'MyCarousel',
                 itemId: 'departurecarousel'
             }]
@@ -78,6 +91,18 @@ Ext.define('TouchApp.view.Main', {
             }, {
                 xtype: 'Settings'
             }]
+        }, {
+            title: 'Download data',
+            itemId: 'downloadData',
+            iconCls: 'refresh',
+            defaults: {
+                flex: 1
+            },
+            layout: {
+                type: 'vbox',
+                align: 'stretch'
+            }
+
         }]
     }
 });

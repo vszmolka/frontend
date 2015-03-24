@@ -1,5 +1,22 @@
-/**
- *
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>The source code</title>
+  <link href="../resources/prettify/prettify.css" type="text/css" rel="stylesheet" />
+  <script type="text/javascript" src="../resources/prettify/prettify.js"></script>
+  <style type="text/css">
+    .highlight { display: block; background-color: #ddd; }
+  </style>
+  <script type="text/javascript">
+    function highlight() {
+      document.getElementById(location.hash.replace(/#/, "")).className = "highlight";
+    }
+  </script>
+</head>
+<body onload="prettyPrint(); highlight();">
+  <pre class="prettyprint lang-js"><span id='TouchApp-view-DepartureList'>/**
+</span> *
  * This class manages the timetables
  */
 Ext.define('TouchApp.view.DepartureList', {
@@ -8,16 +25,16 @@ Ext.define('TouchApp.view.DepartureList', {
     xtype: 'DepartureList',
 
 
-    initialize: function () {
-        var me = this;
+<span id='TouchApp-view-DepartureList-method-initialize'>    initialize: function () {
+</span>        var me = this;
         me.setStore(Ext.create('TouchApp.store.Departures'));
         me.callParent(arguments);
         me.setDisableSelection(true);
         me.setupFilters();
         // me.getStore().load();
     },
-    /**
-     * This is where we generate the final data for the component.
+<span id='TouchApp-view-DepartureList-method-setupFilters'>    /**
+</span>     * This is where we generate the final data for the component.
      * Basically it reads the localStorage, which guaranteed to always hold the most recent version of the data, what we can
      * have. After that, it pairs up the ids with names, storing them for faster access in the original data. Finally, it applies the
      * necessary filters, which is component and user input dependant.
@@ -30,7 +47,7 @@ Ext.define('TouchApp.view.DepartureList', {
         var Stations = Ext.JSON.decode(localStorage.getItem('StationsCache'));
         var Departures = Ext.JSON.decode(localStorage.getItem('StationDeparturesCache'));
 
-        //Lets do the id=> names mapping.
+        //Lets do the id=&gt; names mapping.
         Departures.forEach(function (departure, idx, array) {
             //Map the provider ids
             array[idx].providerName = Providers.filter(function (o, k) {
@@ -62,9 +79,9 @@ Ext.define('TouchApp.view.DepartureList', {
 
             if (item.dow == me.config.dow) {
                 //Are there any providers to filter to?
-                if (selectedProviders.length > 0) {
+                if (selectedProviders.length &gt; 0) {
                     //Lets check if the list
-                    if (selectedProviders.indexOf(Number(item.Providers_idProvider)) > -1) {
+                    if (selectedProviders.indexOf(Number(item.Providers_idProvider)) &gt; -1) {
                         return item;
                     }
                 } else {
@@ -76,8 +93,8 @@ Ext.define('TouchApp.view.DepartureList', {
                 var d = new Date();
                 var n = d.getDay();
                 if (n == item.dow || item.dow == 0) {
-                    if (selectedProviders.length > 0) {
-                        if (selectedProviders.indexOf(Number(item.Providers_idProvider)) > -1) {
+                    if (selectedProviders.length &gt; 0) {
+                        if (selectedProviders.indexOf(Number(item.Providers_idProvider)) &gt; -1) {
                             return item;
                         }
                     } else {
@@ -92,27 +109,30 @@ Ext.define('TouchApp.view.DepartureList', {
         me.getStore().setData(filteredDepartures);
 
     },
-    filterByAfterTime: function (time) {
-        var me = this;
+<span id='TouchApp-view-DepartureList-method-filterByAfterTime'>    filterByAfterTime: function (time) {
+</span>        var me = this;
         me.getStore().clearFilters();
 
     },
 
     config: {
-        store: null, //Each departureList must have its own store instance
-        itemTpl: new Ext.XTemplate('' +
-        '<tpl if="this.getTime(time,dow)">' +
-        '<div style="color: gray;">' +
-        '<tpl else>' +
-        '<div style="color: blue;>"' +
-        '</tpl>' +
-        'At {time} , {providerName} \'s ferry will departure from <b>{stationName}</b> to <b>{stationNameTo}</b></div>', {
+<span id='TouchApp-view-DepartureList-cfg-itemTpl'><span id='TouchApp-view-DepartureList-cfg-store'>        store: null, //Each departureList must have its own store instance
+</span></span>        itemTpl: new Ext.XTemplate('' +
+        '&lt;tpl if=&quot;this.getTime(time,dow)&quot;&gt;' +
+        '&lt;div style=&quot;color: gray;&quot;&gt;' +
+        '&lt;tpl else&gt;' +
+        '&lt;div style=&quot;color: blue;&gt;&quot;' +
+        '&lt;/tpl&gt;' +
+        'At {time} , {providerName} \'s ferry will departure from &lt;b&gt;{stationName}&lt;/b&gt; to &lt;b&gt;{stationNameTo}&lt;/b&gt;&lt;/div&gt;', {
             getTime: function (time,dow) {
-                return ((TouchApp.app.getController('TouchApp.controller.MainController').currentTime > time));
+                return ((TouchApp.app.getController('TouchApp.controller.MainController').currentTime &gt; time));
             }
         }),
-        grouped: true,
-        disableSelection: true,
-        mode: 'SIMPLE'
-    }
+<span id='TouchApp-view-DepartureList-cfg-grouped'>        grouped: true,
+</span><span id='TouchApp-view-DepartureList-cfg-disableSelection'>        disableSelection: true,
+</span><span id='TouchApp-view-DepartureList-cfg-mode'>        mode: 'SIMPLE'
+</span>    }
 });
+</pre>
+</body>
+</html>

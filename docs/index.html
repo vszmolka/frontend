@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="styles-ffa675a506f502109ac7b028808d7e53.css" type="text/css" />
 
   <script type="text/javascript" src="extjs/ext-all.js"></script>
-  <script type="text/javascript" src="data-8b65ebfb97304efcab7cf9b0a5f645f2.js"></script>
+  <script type="text/javascript" src="data-ede19a28bfb06b727cd20520353ebedf.js"></script>
 
   <script type="text/javascript" src="app-0f524ddd276c4019a11a6128932a9c96.js"></script>
 
@@ -25,7 +25,56 @@
   <div id="loading"><span class="title">Documentation - JSDuck</span><span class="logo"></span></div>
 
   <div id="header-content"><strong>Documentation</strong> JSDuck</div>
-  
+  <div id='welcome-content' style='display:none'><div class="markdown"><p><body></body></p>
+
+<h1>Brief documentation of Isle of Wright Travel Connections Mobile App</h1>
+
+<h2>Initializing of the application</h2>
+
+<p>When the application starts, it tries to download the latest data fron the backend. This functionality can be found in the Ext.application.preCacheStores function.
+If the download successful, it stores the mirror of the database's data in the the browsers local storage.</p>
+
+<p>From that point, if the application fails to connect to the backend server, the data will be available from localStorage, so the program can continue to operate properly.</p>
+
+<h2>Data structure</h2>
+
+<p>The database consits of three tables, which are the Providers, Stations, and StationDepartures. The Providers and Stations table holds basic data, the StationsDepartures table have 1-n connection with them.
+This allow to store the departures of multiple providers at multiple stations. The departures holds an additional information, which is day of week, where one can set a timetable for example only for Monday(dow=1)
+or the whole week(dow=0).</p>
+
+<h2>The user interface</h2>
+
+<h3>Main tab</h3>
+
+<p>The app's ui mainly a TabPanel, which holds three tabs. The main information can be found on the first tab, where a Carousel item holds
+all the days of the week plus a view of the "today", where the timetables of the current day(dow = 1-7) are merged with timetables of every day(dow=0).
+Above the carousel, there is a select field, where the user can select the station what he would like to see in the timetable.</p>
+
+<h3>Settings tab</h3>
+
+<p>The user can set up a global filter about providers, to hide them from timetables. Note, that selecting none of them will append all of them!</p>
+
+<h3>Data download tab</h3>
+
+<p>This is not a real tab, just a button streamlined to the tabpanel buttons, which allow the user to reload the stores from the backend. There is an alert message at the end of the process which
+will gives a notice to the user if the action was failed.</p>
+
+<h2>Backend</h2>
+
+<p>The backend is Ext.direct connector, implemented in Kohana. Its automatically exports the defined backend functions to the frontend.
+This funcionality implemented in the ext-direct module.</p>
+
+<p>The three controllers are simple bindings between the database result and the frontend, they are exported directly. All controllers are
+accessible from the frontend with the same name as they can be found in Kohana, with the exported functions.
+For example, one can make a call to backend with this line:</p>
+
+<p>Controller_Providers.getProviders(callback function() {...});</p>
+
+<p>To function properly, the cache and db modules must be enabled in Kohana configuration, and the ext-direct configureation must be adjusted to
+the server where the backend installed( The url config option).</p>
+
+<p></p>
+</div></div>
             <div id='categories-content' style='display:none'>
             <div class='section'>
 <h1>TouchApp</h1>
@@ -33,10 +82,16 @@
 <h3>view</h3>
 <ul class='links'>
 <li><a href="#!/api/TouchApp.view.Carousel" rel="TouchApp.view.Carousel" class="docClass">TouchApp.view.Carousel</a></li>
+<li><a href="#!/api/TouchApp.view.DepartureList" rel="TouchApp.view.DepartureList" class="docClass">TouchApp.view.DepartureList</a></li>
 <li><a href="#!/api/TouchApp.view.Main" rel="TouchApp.view.Main" class="docClass">TouchApp.view.Main</a></li>
+<li><a href="#!/api/TouchApp.view.Settings" rel="TouchApp.view.Settings" class="docClass">TouchApp.view.Settings</a></li>
 </ul>
 </div>
 <div class='middle-column'>
+<h3>Others...</h3>
+<ul class='links'>
+<li><a href="#!/api/TouchApp.controller.MainController" rel="TouchApp.controller.MainController" class="docClass">TouchApp.controller.MainController</a></li>
+</ul>
 </div>
 <div class='right-column'>
 </div>
@@ -46,7 +101,7 @@
 
   
   
-  <div id='footer-content' style='display: none'>Generated on Sun 22 Mar 2015 23:51:17 by <a href='https://github.com/senchalabs/jsduck'>JSDuck</a> 6.0.0beta.</div>
+  <div id='footer-content' style='display: none'>Generated on Tue 24 Mar 2015 18:45:19 by <a href='https://github.com/senchalabs/jsduck'>JSDuck</a> 6.0.0beta.</div>
 
   
 

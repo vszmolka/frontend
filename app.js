@@ -15,6 +15,7 @@
  *
  */
 
+
 Ext.application({
     name: 'TouchApp',
     requires: [
@@ -46,21 +47,47 @@ Ext.application({
         '1536x2008': 'resources/startup/1536x2008.png',
         '1496x2048': 'resources/startup/1496x2048.png'
     },
-
-    preCacheStores: function(callback) {
+    /**
+     * In this function we load all the data from the server and stores them in localStorage.
+     * When every stores loaded, the callback parameter will be called. If any of those fails, them failCallback parameter will be called.
+     *
+     *
+     * @param callback
+     * @param failCallback
+     */
+    preCacheStores: function(callback,failCallback) {
+        debugger;
         var me = this;
         var storesToCache=3;
+        var failure = false;
 
-        Controller_StationDepartures.getDepartures(function (result) {
-            localStorage.setItem('StationDeparturesCache',Ext.JSON.encode(result));
+        if (!failCallback) {
+            failCallback = Ext.emptyFn;
+        }
+        Controller_StationDepartures.getDepartures(function (result,response,success) {
+            debugger;
+            if (!success) {
+                failure = true;
+            } else {
+                localStorage.setItem('StationDeparturesCache',Ext.JSON.encode(result));
+            }
             storesToCache--;
         });
-        Controller_Stations.getStations(function (result) {
-            localStorage.setItem('StationsCache',Ext.JSON.encode(result));
+        Controller_Stations.getStations(function (result,response,success) {
+            if (!success) {
+                failure = true;
+            } else {
+                localStorage.setItem('StationsCache',Ext.JSON.encode(result));
+            }
             storesToCache--;
         });
-        Controller_Providers.getProviders(function (result) {
-            localStorage.setItem('ProvidersCache',Ext.JSON.encode(result));
+        Controller_Providers.getProviders(function (result,response,success) {
+
+            if (!success) {
+                failure = true;
+            } else {
+                localStorage.setItem('ProvidersCache',Ext.JSON.encode(result));
+            }
             storesToCache--;
         });
 
@@ -68,9 +95,13 @@ Ext.application({
         var storeChecker=setInterval(function() {
             if (storesToCache == 0) {
                 //<debug>
-                console.debug('All store loaded and saved to the cache');
+                console.debug('All stores loaded and saved to the cache');
                 //</debug>
-                callback();
+                if (!failure) {
+                    callback();
+                } else {
+                    failCallback();
+                }
                 clearInterval(storeChecker);
             }
         },250);
@@ -88,6 +119,7 @@ Ext.application({
         Ext.direct.Manager.addProvider(Ext.app.REMOTING_API);
         localStorage.setItem('directApi', Ext.JSON.encode(Ext.app.REMOTING_API));
         me.preCacheStores(function() {
+
             Ext.Viewport.add(Ext.create('TouchApp.view.Main'));
         });
 

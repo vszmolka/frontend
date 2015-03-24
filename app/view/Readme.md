@@ -1,1 +1,5 @@
-This folder contains the views
+<body>
+
+Documentation
+
+</body>

@@ -19,10 +19,10 @@ module.exports = function (grunt) {
                 stderr: false
             },
             buildfulldoc: {
-                command: 'jsduck touch/src app --output docs --warning -all:touch/src'
+                command: 'jsduck touch/src app --output docs --welcome=devdoc.md --warning -all:touch/src'
             },
             buildappdoc: {
-                command: 'jsduck app --output docs --warning -all:touch/src'
+                command: 'jsduck app --output docs --welcome=devdoc.md --warning  -all:touch/src'
                 
             }
         },
