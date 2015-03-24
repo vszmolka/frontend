@@ -34,36 +34,50 @@ Ext.define('TouchApp.view.Main', {
         'Ext.TitleBar',
         'Ext.Video',
         'Ext.carousel.Carousel',
-        'TouchApp.view.Carousel'
+        'TouchApp.view.Carousel',
+        'TouchApp.view.MyGrid',
+        'TouchApp.view.DepartureList',
+        'TouchApp.view.Settings'
     ],
     config: {
         tabBarPosition: 'bottom',
         items: [{
-                title: 'Home',
-                iconCls: 'home',
-                cls: 'cards',
-                defaults: {
-                    flex: 1
-                },
-                layout: {
-                    type: 'vbox',
-                    align: 'stretch'
-                },
-                items: [{
-                        docked: 'top',
-                        xtype: 'titlebar',
-                        title: 'MyHome'
-                    }, {
-                        xtype: 'MyCarousel'
-                    }]
-            }, {
-                title: 'Settings',
-                iconCls: 'settings',
-                items: [{
-                        docked: 'top',
-                        xtype: 'titlebar',
-                        title: 'Settings'
-                    }]
+            title: 'Departures',
+            iconCls: 'home',
+            cls: 'cards',
+            defaults: {
+                flex: 1
+            },
+            layout: {
+                type: 'vbox',
+                align: 'stretch'
+            },
+            items: [{
+                docked: 'top',
+                xtype: 'titlebar',
+                title: 'Deparutes'
+            },{
+                xtype: 'MyCarousel',
+                itemId: 'departurecarousel'
             }]
+        }, {
+            title: 'Settings',
+            iconCls: 'settings',
+            cls: 'cards',
+            defaults: {
+                flex: 1
+            },
+            layout: {
+                type: 'vbox',
+                align: 'stretch'
+            },
+            items: [{
+                docked: 'top',
+                xtype: 'titlebar',
+                title: 'Settings'
+            }, {
+                xtype: 'Settings'
+            }]
+        }]
     }
 });

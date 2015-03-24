@@ -1,16 +1,452 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b869cf4f-5445-4b6d-9782-c59e8a160a33" name="Default" comment="- Basic SCSS theming test.&#10;&#10;">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/deltas/app.js/54ab178ab2f1f510165f0fa7486cb33b78b21cae.json" afterPath="$PROJECT_DIR$/android/deltas/app.js/54ab178ab2f1f510165f0fa7486cb33b78b21cae.json" />
+    <list default="true" id="b869cf4f-5445-4b6d-9782-c59e8a160a33" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/model/Departure.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/view/DepartureList.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/store/Departures.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controller/MainController.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/view/MyGrid.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/model/Provider.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/store/Providers.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/store/Users.js" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-amf\.sencha\package\build-impl.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-amf\.sencha\package\build.properties" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-amf\.sencha\package\codegen.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-amf\.sencha\package\plugin.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-amf\.sencha\package\sencha.cfg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-amf\.sencha\package\testing.properties" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-amf\Readme.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-amf\build.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-amf\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-amf\resources\Readme.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-amf\src-touch\data\amf\Encoder.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-amf\src-touch\data\amf\Packet.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-amf\src-touch\data\amf\RemotingMessage.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-amf\src-touch\data\amf\XmlDecoder.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-amf\src-touch\data\amf\XmlEncoder.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-amf\src-touch\direct\AmfRemotingProvider.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-amf\src\Readme.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-amf\test-touch\unit\spec\data\amf\Encoder.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-amf\test-touch\unit\spec\data\amf\Packet.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-amf\test-touch\unit\spec\data\amf\XmlDecoder.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-amf\test-touch\unit\spec\data\amf\XmlEncoder.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-amf\test-touch\unit\spec\data\amf\amf0-all.amf" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-amf\test-touch\unit\spec\data\amf\amf0-records.amf" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-amf\test-touch\unit\spec\data\amf\amf3-all.amf" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-amf\test-touch\unit\spec\data\amf\amf3-records.amf" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-amf\test-touch\unit\spec\data\amf\empty.amf" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-amf\test-touch\unit\spec\data\amf\generate-test-data.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-amf\test-touch\unit\spec\data\amf\validData.amf" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\.sencha\package\build-impl.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\.sencha\package\build.properties" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\.sencha\package\codegen.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\.sencha\package\plugin.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\.sencha\package\sencha.cfg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\.sencha\package\sub-builds.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\.sencha\package\testing.properties" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\build.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\docs\guides.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\docs\guides\grid_guide\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\bufferedgrid\app.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\bufferedgrid\app.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\bufferedgrid\bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\bufferedgrid\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\bufferedgrid\server.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\.sencha\app\app-build.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\.sencha\app\build-impl.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\.sencha\app\build.properties" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\.sencha\app\codegen.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\.sencha\app\defaults.properties" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\.sencha\app\find-cmd-impl.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\.sencha\app\init-impl.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\.sencha\app\js-impl.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\.sencha\app\microloader\development.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\.sencha\app\microloader\production.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\.sencha\app\microloader\testing.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\.sencha\app\native.defaults.properties" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\.sencha\app\native.properties" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\.sencha\app\package.defaults.properties" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\.sencha\app\package.properties" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\.sencha\app\packager-impl.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\.sencha\app\page-impl.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\.sencha\app\plugin.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\.sencha\app\production.defaults.properties" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\.sencha\app\production.properties" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\.sencha\app\refresh-impl.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\.sencha\app\resolve-impl.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\.sencha\app\resources-impl.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\.sencha\app\sass-impl.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\.sencha\app\sencha.cfg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\.sencha\app\slice-impl.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\.sencha\app\testing.defaults.properties" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\.sencha\app\testing.properties" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\.sencha\app\touch.properties" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\.sencha\app\watch-impl.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\app.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\app.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\archive\app.js\07d8b6e878f79b1308ba063b03de1d30fdd9acf0" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\archive\app.js\39fe8f019fffc22a84c0f0a785f5be01d407f0c6" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\archive\app.js\40fe30f7bd392a9df7e6431b0bd7321e87bc1cc8" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\archive\app.js\429e5f1a892139a7fe64b1da8d5561fce3ff7675" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\archive\app.js\47633fad3e25b9f15cfde64f1b76b79c2ec82310" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\archive\app.js\4f94ef71e767dfe04ab5ff38376d6abd13900f81" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\archive\app.js\67b6afd9f41086ff01475774d9985fe239d5f8ac" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\archive\app.js\6b619353bbe35c0775aa6798261e3ca171200582" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\archive\app.js\796c23564f6459ca02b450867b0f2a1bd8483c36" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\archive\app.js\883ad99dbaa7d5178d11a28c2d2daa69fe3692ed" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\archive\app.js\8b2cf577d94e60361b031bc688f3c016de1e77ec" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\archive\app.js\8fd6e3e9cde59e4e1088aad5f42771740366471a" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\archive\app.js\90160fd5ced5ca18992efc60994a0421c69c1239" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\archive\app.js\9e8401d9ccabec991bc3321bc16be8f42de01fe3" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\archive\app.js\aaa17f6fba8447a7c56490f92d8a47f4eea78d2b" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\archive\app.js\b7b7b0074340e3457298bdd1e2191966a14660f6" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\archive\app.js\d2fdfbf260331d2164892e3f91e29169626a4900" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\archive\app.js\d65db7cf4cf0157738234f1cbc3f8a2ad832af8c" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\archive\app.js\e16a698b48a090045c555b622f00e97d265a2a9d" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\archive\app.js\e4e1f62d945658409e19abd1d7df99eec3dcb620" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\archive\touch\resources\css\sencha-touch.css\1b215fb142cd9132db1c0570a932570ffa76c496" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\archive\touch\resources\css\sencha-touch.css\1e79cc364f8a9c4acae9610f832243c373075075" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\archive\touch\resources\css\sencha-touch.css\265aea9d85b1d984cbc3dff52258679cc38a79d4" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\archive\touch\resources\css\sencha-touch.css\2dffbcb20ea9d4a7a9c5d62e9de142d5f4f5237b" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\archive\touch\resources\css\sencha-touch.css\42215f063d34caaaaf789a14905c410503860e7c" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\archive\touch\resources\css\sencha-touch.css\4401576f4a1271e8781f00e8ac973d0c52e74498" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\archive\touch\resources\css\sencha-touch.css\4ce6e686dd74f369bed176fed21347ca488d62a9" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\archive\touch\resources\css\sencha-touch.css\551fb2e6e37eac6e7647ade83e64b212c9dabc4e" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\archive\touch\resources\css\sencha-touch.css\5a6520345a3019d8009ec33feb1491c7fd2133c0" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\archive\touch\resources\css\sencha-touch.css\6601c062605cd0de979b834a3ddad8afb75b8858" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\archive\touch\resources\css\sencha-touch.css\9a0c6eb7da576b662120f1f81d1bacbaee85dbc0" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\archive\touch\resources\css\sencha-touch.css\a8f2ddb6259ad36d9b29aeebbc5881711afe7b91" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\archive\touch\resources\css\sencha-touch.css\bca181ea4d198425c2352764d2574353dd42220c" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\archive\touch\resources\css\sencha-touch.css\d63758a735e1f9b5f607be735a838011d27e8e9f" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\archive\touch\resources\css\sencha-touch.css\dc91ff9488ecf70cff04389a68f0f103726161c6" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\archive\touch\resources\css\wp.css\01da815d4f43b1626f20f134d5d29eb13d58a340" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\archive\touch\resources\css\wp.css\06da3d5bcd4d7d26178c87d2493a5012fc0be255" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\archive\touch\resources\css\wp.css\1808f2625138dc515046988e2ab6e25968c74e71" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\archive\touch\resources\css\wp.css\20d3c307d9e957b4b698a5be2a0f30fab2d317da" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\archive\touch\resources\css\wp.css\341fdbfa9025b4e8a0ad221c7535d1d8dd2ad6bd" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\archive\touch\resources\css\wp.css\401413abf0a5ec70eef2d11f61653157d30a6a9d" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\archive\touch\resources\css\wp.css\464a78ad5a8d1c264d0ab94782368287c93aa512" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\archive\touch\resources\css\wp.css\49e0184465f8f3ba6ba3a6a6e608db8c4613bb4c" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\archive\touch\resources\css\wp.css\9228c66004f6901e6be7b36da626fd620659f61e" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\archive\touch\resources\css\wp.css\93059b48b996350372126de4d7f7763e89b2259f" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\archive\touch\resources\css\wp.css\9cc3bcedf3bbf28c16ffd9773153549a27cdfac3" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\archive\touch\resources\css\wp.css\e3f8b34f5305f46cdda6bfd50eedaa25f06e9307" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\bootstrap.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\build.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\contacts.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\packager.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\resources\css\.gitkeep" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\resources\icons\icon.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\resources\icons\icon@144.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\resources\icons\icon@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\resources\icons\icon@72.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\resources\images\.gitkeep" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\resources\loading\Default-Landscape@2x~ipad.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\resources\loading\Default-LandscapeLeft~ipad.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\resources\loading\Default-LandscapeRight~ipad.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\resources\loading\Default-Landscape~ipad.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\resources\loading\Default-Portrait@2x~ipad.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\resources\loading\Default-PortraitUpsideDown~ipad.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\resources\loading\Default-Portrait~ipad.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\resources\loading\Default.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\resources\loading\Default@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\resources\loading\Default~ipad.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\resources\sass\.gitkeep" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\resources\sass\app.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\resources\sass\config.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\resources\startup\1496x2048.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\resources\startup\1536x2008.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\resources\startup\320x460.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\resources\startup\640x1096.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\resources\startup\640x920.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\resources\startup\748x1024.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\grid\resources\startup\768x1004.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\.sencha\app\app-build.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\.sencha\app\build-impl.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\.sencha\app\build.properties" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\.sencha\app\codegen.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\.sencha\app\defaults.properties" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\.sencha\app\find-cmd-impl.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\.sencha\app\init-impl.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\.sencha\app\js-impl.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\.sencha\app\microloader\development.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\.sencha\app\microloader\production.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\.sencha\app\microloader\testing.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\.sencha\app\native.defaults.properties" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\.sencha\app\native.properties" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\.sencha\app\package.defaults.properties" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\.sencha\app\package.properties" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\.sencha\app\packager-impl.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\.sencha\app\page-impl.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\.sencha\app\plugin.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\.sencha\app\production.defaults.properties" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\.sencha\app\production.properties" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\.sencha\app\refresh-impl.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\.sencha\app\resolve-impl.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\.sencha\app\resources-impl.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\.sencha\app\sass-impl.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\.sencha\app\sencha.cfg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\.sencha\app\slice-impl.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\.sencha\app\testing.defaults.properties" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\.sencha\app\testing.properties" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\.sencha\app\touch.properties" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\.sencha\app\watch-impl.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\app.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\app.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\archive\app.js\0021751dfd539674918f037a02742ce0069c1806" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\archive\app.js\20cdb9996b8753c135343a17532c9ed883d50090" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\archive\app.js\3fc457b9e84dceddbd17d4d27153c0a2c376993d" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\archive\app.js\446840dadbe80545dd3cf437ae4615c2d1cbe5a6" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\archive\app.js\4d36cb7f373517a644e2d9da438fcb5fe6a95fea" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\archive\app.js\5bf22e787e6ea5c214a40c99f1a1dc6b897b93ba" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\archive\app.js\7041b1b2fe5daa768562546666c8efb371ec5c4d" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\archive\app.js\7dc95c3e6d7ac1f7a02dda5ef0ea6230a82614cd" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\archive\app.js\862cd0f3708ad8f94ed220b8127eaa7f10a17511" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\archive\app.js\86659edb830b3d7e8e160c465392cc5cf0bec8e0" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\archive\app.js\87e59610e0d4c1ba1387d5f8f338546888554b8d" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\archive\app.js\900c49f20052afe8533571dfb968887a3577d6c4" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\archive\app.js\a718369e4c76d90a32e31b2fa358e7a818569405" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\archive\app.js\b205c5e99e6491e49a2c624dafb34b15e46f921a" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\archive\app.js\c0f14873a5154cea5d6289fd45cfc28c7ea1c3b9" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\archive\app.js\d4a3fc6781b1cb66c64ea8994f75c171698f26fa" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\archive\app.js\dfa3cb9d15c97e51790f4c0e754b515c995fb773" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\archive\app.js\f91fb426e0f28754cbbba641933954c6fa27cbb8" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\archive\app.js\fb4b4f680cbf7760fdb9f2420a0e78aa756cfe4f" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\archive\app.js\fffa3287d94163228b3a2010d5ea71135653c498" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\archive\touch\resources\css\sencha-touch.css\1b215fb142cd9132db1c0570a932570ffa76c496" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\archive\touch\resources\css\sencha-touch.css\1e79cc364f8a9c4acae9610f832243c373075075" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\archive\touch\resources\css\sencha-touch.css\265aea9d85b1d984cbc3dff52258679cc38a79d4" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\archive\touch\resources\css\sencha-touch.css\2dffbcb20ea9d4a7a9c5d62e9de142d5f4f5237b" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\archive\touch\resources\css\sencha-touch.css\42215f063d34caaaaf789a14905c410503860e7c" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\archive\touch\resources\css\sencha-touch.css\4401576f4a1271e8781f00e8ac973d0c52e74498" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\archive\touch\resources\css\sencha-touch.css\4ce6e686dd74f369bed176fed21347ca488d62a9" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\archive\touch\resources\css\sencha-touch.css\551fb2e6e37eac6e7647ade83e64b212c9dabc4e" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\archive\touch\resources\css\sencha-touch.css\5a6520345a3019d8009ec33feb1491c7fd2133c0" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\archive\touch\resources\css\sencha-touch.css\6601c062605cd0de979b834a3ddad8afb75b8858" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\archive\touch\resources\css\sencha-touch.css\9a0c6eb7da576b662120f1f81d1bacbaee85dbc0" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\archive\touch\resources\css\sencha-touch.css\a8f2ddb6259ad36d9b29aeebbc5881711afe7b91" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\archive\touch\resources\css\sencha-touch.css\bca181ea4d198425c2352764d2574353dd42220c" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\archive\touch\resources\css\sencha-touch.css\d63758a735e1f9b5f607be735a838011d27e8e9f" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\archive\touch\resources\css\sencha-touch.css\dc91ff9488ecf70cff04389a68f0f103726161c6" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\archive\touch\resources\css\wp.css\01da815d4f43b1626f20f134d5d29eb13d58a340" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\archive\touch\resources\css\wp.css\06da3d5bcd4d7d26178c87d2493a5012fc0be255" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\archive\touch\resources\css\wp.css\1808f2625138dc515046988e2ab6e25968c74e71" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\archive\touch\resources\css\wp.css\20d3c307d9e957b4b698a5be2a0f30fab2d317da" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\archive\touch\resources\css\wp.css\341fdbfa9025b4e8a0ad221c7535d1d8dd2ad6bd" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\archive\touch\resources\css\wp.css\401413abf0a5ec70eef2d11f61653157d30a6a9d" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\archive\touch\resources\css\wp.css\464a78ad5a8d1c264d0ab94782368287c93aa512" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\archive\touch\resources\css\wp.css\49e0184465f8f3ba6ba3a6a6e608db8c4613bb4c" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\archive\touch\resources\css\wp.css\9228c66004f6901e6be7b36da626fd620659f61e" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\archive\touch\resources\css\wp.css\93059b48b996350372126de4d7f7763e89b2259f" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\archive\touch\resources\css\wp.css\9cc3bcedf3bbf28c16ffd9773153549a27cdfac3" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\archive\touch\resources\css\wp.css\e3f8b34f5305f46cdda6bfd50eedaa25f06e9307" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\bootstrap.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\build.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\contacts.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\packager.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\resources\css\.gitkeep" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\resources\icons\icon.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\resources\icons\icon@144.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\resources\icons\icon@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\resources\icons\icon@72.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\resources\images\.gitkeep" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\resources\loading\Default-Landscape@2x~ipad.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\resources\loading\Default-LandscapeLeft~ipad.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\resources\loading\Default-LandscapeRight~ipad.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\resources\loading\Default-Landscape~ipad.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\resources\loading\Default-Portrait@2x~ipad.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\resources\loading\Default-PortraitUpsideDown~ipad.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\resources\loading\Default-Portrait~ipad.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\resources\loading\Default.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\resources\loading\Default@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\resources\loading\Default~ipad.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\resources\sass\.gitkeep" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\resources\sass\app.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\resources\sass\config.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\resources\startup\1496x2048.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\resources\startup\1536x2008.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\resources\startup\320x460.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\resources\startup\640x1096.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\resources\startup\640x920.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\resources\startup\748x1024.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\examples\summarygrid\resources\startup\768x1004.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\overrides\Readme.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\resources\Readme.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\src\grid\Grid.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\src\grid\HeaderContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\src\grid\HeaderGroup.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\src\grid\Row.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\src\grid\column\Boolean.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\src\grid\column\Column.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\src\grid\column\Date.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\src\grid\column\Number.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\src\grid\column\Template.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\src\grid\column\unsupported\Action.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\src\grid\column\unsupported\CheckColumn.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\src\grid\infinite\Grid.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\src\grid\infinite\Row.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\src\grid\infinite\TemplateRow.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\src\grid\plugin\ColumnResizing.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\src\grid\plugin\Editable.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\src\grid\plugin\MultiSelection.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\src\grid\plugin\PagingToolbar.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\src\grid\plugin\SummaryRow.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\packages\sencha-touch-grid\src\grid\plugin\ViewOptions.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\chart\AbstractChart.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\chart\CartesianChart.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\chart\Legend.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\chart\MarkerHolder.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\chart\Markers.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\chart\PolarChart.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\chart\SpaceFillingChart.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\chart\axis\Axis.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\chart\axis\Category.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\chart\axis\Numeric.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\chart\axis\Time.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\chart\axis\layout\CombineDuplicate.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\chart\axis\layout\Continuous.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\chart\axis\layout\Discrete.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\chart\axis\layout\Layout.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\chart\axis\segmenter\Names.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\chart\axis\segmenter\Numeric.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\chart\axis\segmenter\Segmenter.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\chart\axis\segmenter\Time.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\chart\axis\sprite\Axis.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\chart\grid\CircularGrid.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\chart\grid\HorizontalGrid.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\chart\grid\RadialGrid.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\chart\grid\VerticalGrid.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\chart\interactions\Abstract.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\chart\interactions\CrossZoom.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\chart\interactions\Crosshair.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\chart\interactions\ItemHighlight.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\chart\interactions\ItemInfo.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\chart\interactions\PanZoom.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\chart\interactions\Rotate.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\chart\interactions\RotatePie3D.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\chart\label\Callout.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\chart\label\Label.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\chart\series\Area.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\chart\series\Bar.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\chart\series\CandleStick.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\chart\series\Cartesian.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\chart\series\Gauge.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\chart\series\ItemPublisher.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\chart\series\Line.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\chart\series\Pie.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\chart\series\Pie3D.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\chart\series\Polar.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\chart\series\Radar.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\chart\series\Scatter.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\chart\series\Series.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\chart\series\StackedCartesian.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\chart\series\sprite\Aggregative.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\chart\series\sprite\Area.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\chart\series\sprite\Bar.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\chart\series\sprite\CandleStick.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\chart\series\sprite\Cartesian.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\chart\series\sprite\Line.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\chart\series\sprite\Pie3DPart.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\chart\series\sprite\PieSlice.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\chart\series\sprite\Polar.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\chart\series\sprite\Radar.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\chart\series\sprite\Scatter.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\chart\series\sprite\StackedCartesian.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\draw\Animator.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\draw\Color.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\draw\Component.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\draw\Draw.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\draw\LimitedCache.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\draw\Matrix.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\draw\Path.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\draw\SegmentTree.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\draw\Solver.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\draw\Surface.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\draw\TextMeasurer.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\draw\TimingFunctions.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\draw\engine\Canvas.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\draw\engine\Svg.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\draw\engine\SvgContext.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\draw\engine\SvgExporter.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\draw\gradient\Gradient.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\draw\gradient\GradientDefinition.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\draw\gradient\Linear.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\draw\gradient\Radial.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\draw\modifier\Animation.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\draw\modifier\Highlight.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\draw\modifier\Modifier.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\draw\modifier\Target.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\draw\sprite\AnimationParser.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\draw\sprite\Arc.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\draw\sprite\AttributeDefinition.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\draw\sprite\AttributeParser.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\draw\sprite\Circle.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\draw\sprite\Composite.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\draw\sprite\Ellipse.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\draw\sprite\EllipticalArc.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\draw\sprite\Image.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\draw\sprite\Instancing.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\draw\sprite\Line.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\draw\sprite\Path.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\draw\sprite\Rect.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\draw\sprite\Sector.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\draw\sprite\Sprite.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\frontend\touch\src\draw\sprite\Text.js" afterPath="" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\frontend\app\view\form.js" afterPath="$PROJECT_DIR$/app/view/Settings.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/src/data/association/BelongsTo.js" afterPath="$PROJECT_DIR$/touch/src/data/association/BelongsTo.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/Carousel.js" afterPath="$PROJECT_DIR$/app/view/Carousel.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/src/ComponentQuery.js" afterPath="$PROJECT_DIR$/touch/src/ComponentQuery.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/src/viewport/Default.js" afterPath="$PROJECT_DIR$/touch/src/viewport/Default.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/src/core/Ext-more.js" afterPath="$PROJECT_DIR$/touch/src/core/Ext-more.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/src/data/association/HasOne.js" afterPath="$PROJECT_DIR$/touch/src/data/association/HasOne.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/Main.js" afterPath="$PROJECT_DIR$/app/view/Main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/src/form/Panel.js" afterPath="$PROJECT_DIR$/touch/src/form/Panel.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/src/plugin/PullRefresh.js" afterPath="$PROJECT_DIR$/touch/src/plugin/PullRefresh.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/src/scroll/Scroller.js" afterPath="$PROJECT_DIR$/touch/src/scroll/Scroller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/src/plugin/SortableList.js" afterPath="$PROJECT_DIR$/touch/src/plugin/SortableList.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/src/data/proxy/Sql.js" afterPath="$PROJECT_DIR$/touch/src/data/proxy/Sql.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/src/event/publisher/TouchGesture.js" afterPath="$PROJECT_DIR$/touch/src/event/publisher/TouchGesture.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/src/data/Validations.js" afterPath="$PROJECT_DIR$/touch/src/data/Validations.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/src/core/version/Version.js" afterPath="$PROJECT_DIR$/touch/src/core/version/Version.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/src/Video.js" afterPath="$PROJECT_DIR$/touch/src/Video.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/resources/themes/stylesheets/sencha-touch/default/src/field/_Field.scss" afterPath="$PROJECT_DIR$/touch/resources/themes/stylesheets/sencha-touch/default/src/field/_Field.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/resources/themes/stylesheets/sencha-touch/default/var/field/_Field.scss" afterPath="$PROJECT_DIR$/touch/resources/themes/stylesheets/sencha-touch/default/var/field/_Field.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/resources/themes/stylesheets/sencha-touch/default/src/form/_Panel.scss" afterPath="$PROJECT_DIR$/touch/resources/themes/stylesheets/sencha-touch/default/src/form/_Panel.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/resources/themes/stylesheets/sencha-touch/windows/src/tab/_Panel.scss" afterPath="$PROJECT_DIR$/touch/resources/themes/stylesheets/sencha-touch/windows/src/tab/_Panel.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/css/app.css" afterPath="$PROJECT_DIR$/resources/css/app.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/app.js" afterPath="$PROJECT_DIR$/android/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/app.json" afterPath="$PROJECT_DIR$/android/app.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.json" afterPath="$PROJECT_DIR$/app.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/sass/app.scss" afterPath="$PROJECT_DIR$/resources/sass/app.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/cache.appcache" afterPath="$PROJECT_DIR$/android/cache.appcache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/resources/css/base.css" afterPath="$PROJECT_DIR$/touch/resources/css/base.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/resources/css/bb10.css" afterPath="$PROJECT_DIR$/touch/resources/css/bb10.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap.js" afterPath="$PROJECT_DIR$/bootstrap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sencha/app/codegen.json" afterPath="$PROJECT_DIR$/.sencha/app/codegen.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/resources/css/cupertino-classic.css" afterPath="$PROJECT_DIR$/touch/resources/css/cupertino-classic.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/resources/css/cupertino.css" afterPath="$PROJECT_DIR$/touch/resources/css/cupertino.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/file-header.txt" afterPath="$PROJECT_DIR$/touch/file-header.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/frontend.iml" afterPath="$PROJECT_DIR$/.idea/frontend.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/license.txt" afterPath="$PROJECT_DIR$/touch/license.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/resources/css/mountainview.css" afterPath="$PROJECT_DIR$/touch/resources/css/mountainview.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/sencha-touch-all-debug.js" afterPath="$PROJECT_DIR$/touch/sencha-touch-all-debug.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/sencha-touch-all.js" afterPath="$PROJECT_DIR$/touch/sencha-touch-all.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/sencha-touch-debug.js" afterPath="$PROJECT_DIR$/touch/sencha-touch-debug.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/resources/css/sencha-touch.css" afterPath="$PROJECT_DIR$/touch/resources/css/sencha-touch.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/resources/css-debug/sencha-touch.css" afterPath="$PROJECT_DIR$/touch/resources/css-debug/sencha-touch.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/sencha-touch.js" afterPath="$PROJECT_DIR$/touch/sencha-touch.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sencha/app/sencha.cfg" afterPath="$PROJECT_DIR$/.sencha/app/sencha.cfg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sencha/workspace/sencha.cfg" afterPath="$PROJECT_DIR$/.sencha/workspace/sencha.cfg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/cmd/sencha.cfg" afterPath="$PROJECT_DIR$/touch/cmd/sencha.cfg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/resources/css/tizen.css" afterPath="$PROJECT_DIR$/touch/resources/css/tizen.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/version.txt" afterPath="$PROJECT_DIR$/touch/version.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/resources/css/wp.css" afterPath="$PROJECT_DIR$/touch/resources/css/wp.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touch/resources/css-debug/wp.css" afterPath="$PROJECT_DIR$/touch/resources/css-debug/wp.css" />
     </list>
     <ignored path="frontend.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,8 +473,8 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1024" max-vertical-offset="1632">
-              <caret line="84" column="19" selection-start-line="84" selection-start-column="19" selection-end-line="84" selection-end-column="19" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="191" max-vertical-offset="2431">
+              <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -46,11 +482,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.scss" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/sass/app.scss">
+      <file leaf-file-name="DepartureList.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/view/DepartureList.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.31903484" vertical-offset="0" max-vertical-offset="373">
-              <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.36348686" vertical-offset="0" max-vertical-offset="612">
+              <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -59,82 +495,83 @@
       <file leaf-file-name="Carousel.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/view/Carousel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1139">
-              <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1275">
+              <caret line="58" column="17" selection-start-line="58" selection-start-column="17" selection-end-line="58" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Default@2x.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/loading/Default@2x.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Default.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/loading/Default.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/css/app.css">
+      <file leaf-file-name="Departures.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/store/Departures.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="119">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
+              <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Readme.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controller/Readme.md">
+          <provider editor-type-id="MarkdownPreviewEditor">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="119">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainController.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controller/MainController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="4" max-vertical-offset="714">
+              <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
               <folding>
-                <element signature="e#14912#32163#1" expanded="true" />
-                <element signature="e#32180#56581#1" expanded="true" />
-                <element signature="e#56602#111039#1" expanded="true" />
-                <element signature="e#139932#140039#2" expanded="true" />
-                <element signature="e#140196#140303#2" expanded="true" />
-                <element signature="e#151689#152574#1" expanded="true" />
-                <element signature="e#153185#153842#1" expanded="true" />
+                <element signature="e#0#46#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sencha-touch.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/touch/sencha-touch.js">
+      <file leaf-file-name="Main.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/view/Main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="54219" max-vertical-offset="285209">
-              <caret line="3232" column="25" selection-start-line="3232" selection-start-column="25" selection-end-line="3232" selection-end-column="25" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="650" max-vertical-offset="1513">
+              <caret line="57" column="33" selection-start-line="57" selection-start-column="33" selection-end-line="57" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Gruntfile.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Gruntfile.js">
+      <file leaf-file-name="Settings.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/view/Settings.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="513" max-vertical-offset="1003">
-              <caret line="48" column="50" selection-start-line="48" selection-start-column="50" selection-end-line="48" selection-end-column="50" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="1156">
-              <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="55" max-vertical-offset="1003">
+              <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app.json">
+      <file leaf-file-name="Provider.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/model/Provider.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2652">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
+              <caret line="0" column="35" selection-start-line="0" selection-start-column="35" selection-end-line="0" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Providers.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/store/Providers.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
+              <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -149,9 +586,27 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Gruntfile.js" />
-        <option value="$PROJECT_DIR$/app.js" />
-        <option value="$PROJECT_DIR$/app/view/Carousel.js" />
+        <option value="5ea00f0a/scratch" />
+        <option value="$PROJECT_DIR$/app.json" />
+        <option value="$PROJECT_DIR$/app/model/user.js" />
         <option value="$PROJECT_DIR$/resources/sass/app.scss" />
+        <option value="$PROJECT_DIR$/app/store/User.js" />
+        <option value="$PROJECT_DIR$/app/store/Users.js" />
+        <option value="$PROJECT_DIR$/app/view/MyGrid.js" />
+        <option value="$PROJECT_DIR$/app/model/User.js" />
+        <option value="$PROJECT_DIR$/app/model/Departures.js" />
+        <option value="$PROJECT_DIR$/app/store/Departures.js" />
+        <option value="$PROJECT_DIR$/app/model/Departure.js" />
+        <option value="$PROJECT_DIR$/app/view/form.js" />
+        <option value="$PROJECT_DIR$/app/model/Provider.js" />
+        <option value="$PROJECT_DIR$/app/store/Providers.js" />
+        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/touch/version.txt" />
+        <option value="$PROJECT_DIR$/app/view/Main.js" />
+        <option value="$PROJECT_DIR$/app/view/Settings.js" />
+        <option value="$PROJECT_DIR$/app/view/Carousel.js" />
+        <option value="$PROJECT_DIR$/app/controller/MainController.js" />
+        <option value="$PROJECT_DIR$/app/view/DepartureList.js" />
       </list>
     </option>
   </component>
@@ -241,7 +696,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -270,12 +724,99 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
+              <option name="myItemId" value="touch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="store" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -284,8 +825,19 @@
     <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FullScreen" value="false" />
+    <property name="restartRequiresConfirmation" value="true" />
+    <property name="options.lastSelected" value="project.propDebugger" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="com.intellij.ide.scratch.ScratchpadManager" value="JavaScript 1.6" />
   </component>
-  <component name="RunManager" selected="JavaScript Debug.index.html">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\frontend\app\store" />
+      <recent name="C:\xampp\htdocs\frontend\app\model" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Node.js.scratch">
     <configuration default="false" name="Gruntfile.js" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost/frontend/Gruntfile.js">
       <RunnerSettings RunnerId="JavascriptDebugRunner" />
       <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
@@ -296,10 +848,19 @@
       <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
       <method />
     </configuration>
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+    <configuration default="false" name="scratch" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="C:/Program Files (x86)/nodejs/node" path-to-js-file="scratch://scratch" working-dir="$PROJECT_DIR$">
+      <RunnerSettings RunnerId="Basic" />
+      <ConfigurationWrapper RunnerId="Basic" />
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
@@ -307,10 +868,6 @@
       <setting name="settingsFile" value="" />
       <setting name="serverType" value="INTERNAL" />
       <setting name="preferredDebugBrowser" value="Chrome" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
@@ -334,18 +891,23 @@
       <envs />
       <method />
     </configuration>
-    <list size="2">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.Gruntfile.js" />
       <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+      <item index="2" class="java.lang.String" itemvalue="Node.js.scratch" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.Gruntfile.js" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Node.js.scratch" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.Gruntfile.js" />
       </list>
     </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="StructureViewFactory">
+    <option name="ACTIVE_ACTIONS" value=",HIDE_INHERITED_FROM_OBJECT,SHOW_CLASSES" />
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -356,32 +918,40 @@
       <option name="number" value="Default" />
       <updated>1427064368730</updated>
     </task>
+    <task id="LOCAL-00001" summary="- Basic SCSS theming test.&#10;&#10;">
+      <created>1427116691711</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1427116691711</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Grunt" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32861635" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16105418" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24304539" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21961933" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39937106" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39937106" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4025157" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -404,11 +974,102 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="6" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/resources/css/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="129523">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/touch/sencha-touch.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="54672" max-vertical-offset="279565">
+          <caret line="3232" column="25" selection-start-line="3232" selection-start-column="25" selection-end-line="3232" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2652">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="714" max-vertical-offset="1632">
+          <caret line="42" column="6" selection-start-line="42" selection-start-column="6" selection-end-line="42" selection-end-column="6" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/EcmaScript5.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="173" max-vertical-offset="3349">
+          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/sass/app.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="340">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/Carousel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1139">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/loading/Default@2x.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/loading/Default.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/css/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="129523">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/touch/sencha-touch.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="54672" max-vertical-offset="279565">
+          <caret line="3232" column="25" selection-start-line="3232" selection-start-column="25" selection-end-line="3232" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="1156">
+          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2652">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1632">
@@ -423,7 +1084,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="54219" max-vertical-offset="285209">
           <caret line="3232" column="25" selection-start-line="3232" selection-start-column="25" selection-end-line="3232" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -431,9 +1091,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="513" max-vertical-offset="1003">
           <caret line="48" column="50" selection-start-line="48" selection-start-column="50" selection-end-line="48" selection-end-column="50" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -441,7 +1098,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="1156">
           <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -449,7 +1105,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2652">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -467,9 +1122,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1003">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -477,25 +1129,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="513" max-vertical-offset="1003">
           <caret line="48" column="50" selection-start-line="48" selection-start-column="50" selection-end-line="48" selection-end-column="50" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="1156">
-          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2652">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -503,17 +1136,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="54219" max-vertical-offset="285209">
           <caret line="3232" column="25" selection-start-line="3232" selection-start-column="25" selection-end-line="3232" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1024" max-vertical-offset="1632">
-          <caret line="84" column="19" selection-start-line="84" selection-start-column="19" selection-end-line="84" selection-end-column="19" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -531,30 +1153,218 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/EcmaScript5.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="173" max-vertical-offset="3349">
+          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Readme.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.9666667" vertical-offset="0" max-vertical-offset="408">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.384615" vertical-offset="2083" max-vertical-offset="2669">
+          <caret line="143" column="4" selection-start-line="143" selection-start-column="4" selection-end-line="143" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/sass/app.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="582">
+          <caret line="0" column="19" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/sencha-touch-grid/src/grid/Grid.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.057143" vertical-offset="4794" max-vertical-offset="9537">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/store/Readme.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/sencha-touch-grid/examples/bufferedgrid/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="377859">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/sencha-touch-grid/examples/bufferedgrid/app.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/sencha-touch-grid/examples/grid/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.049342107" vertical-offset="1398" max-vertical-offset="3434">
+          <caret line="84" column="33" selection-start-line="84" selection-start-column="11" selection-end-line="84" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/sencha-touch-grid/examples/bufferedgrid/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2873">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="1156">
+          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/store/Users.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/MyGrid.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="833">
+          <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/User.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/Departure.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="608">
+          <caret line="0" column="36" selection-start-line="0" selection-start-column="36" selection-end-line="0" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/store/Providers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
+          <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/Provider.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="608">
+          <caret line="0" column="35" selection-start-line="0" selection-start-column="35" selection-end-line="0" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controller/Readme.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="191" max-vertical-offset="2431">
+          <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
           <folding>
-            <element signature="e#14912#32163#1" expanded="true" />
-            <element signature="e#32180#56581#1" expanded="true" />
-            <element signature="e#56602#111039#1" expanded="true" />
-            <element signature="e#139932#140039#2" expanded="true" />
-            <element signature="e#140196#140303#2" expanded="true" />
-            <element signature="e#151689#152574#1" expanded="true" />
-            <element signature="e#153185#153842#1" expanded="true" />
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/touch/version.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="608">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/Main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="633" max-vertical-offset="1513">
+          <caret line="57" column="33" selection-start-line="57" selection-start-column="33" selection-end-line="57" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/Settings.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="55" max-vertical-offset="1003">
+          <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/store/Departures.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
+          <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controller/MainController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="4" max-vertical-offset="714">
+          <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#46#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/view/Carousel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1139">
-          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1275">
+          <caret line="58" column="17" selection-start-line="58" selection-start-column="17" selection-end-line="58" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/sass/app.scss">
+    <entry file="file://$PROJECT_DIR$/app/view/DepartureList.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31903484" vertical-offset="0" max-vertical-offset="373">
-          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.36348686" vertical-offset="0" max-vertical-offset="612">
+          <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
           <folding />
         </state>
       </provider>
