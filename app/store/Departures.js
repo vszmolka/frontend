@@ -1,3 +1,6 @@
+/**
+*
+*/
 Ext.define('TouchApp.store.Departures', {
     extend: 'Ext.data.Store',
     requires: ['TouchApp.model.Departure'],
@@ -6,7 +9,6 @@ Ext.define('TouchApp.store.Departures', {
         sorters: 'time',
         grouper: {
             groupFn: function(record) {
-                debugger;
                 return record.get('time').slice(0,2)+":00";
             }
         }

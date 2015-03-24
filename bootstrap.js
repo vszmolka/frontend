@@ -35,8 +35,7 @@ Ext.Loader.addClassPathMappings({
   "Ext.grid": "packages/sencha-touch-grid/src/grid",
   "Ext.grid.column.Action": "packages/sencha-touch-grid/src/grid/column/unsupported/Action.js",
   "Ext.grid.column.CheckColumn": "packages/sencha-touch-grid/src/grid/column/unsupported/CheckColumn.js",
-  "TouchApp": "app",
-  "TouchApp.model.user": "app/store/User.js"
+  "TouchApp": "app"
 });
 
 Ext.ClassManager.addNameAlternateMappings({
@@ -560,17 +559,6 @@ Ext.ClassManager.addNameAlternateMappings({
   "Ext.layout.wrapper.BoxDock": [],
   "Ext.layout.wrapper.Dock": [],
   "Ext.layout.wrapper.Inner": [],
-  "Ext.log.Base": [],
-  "Ext.log.Logger": [],
-  "Ext.log.filter.Filter": [],
-  "Ext.log.filter.Priority": [],
-  "Ext.log.formatter.Default": [],
-  "Ext.log.formatter.Formatter": [],
-  "Ext.log.formatter.Identity": [],
-  "Ext.log.writer.Console": [],
-  "Ext.log.writer.DocumentTitle": [],
-  "Ext.log.writer.Remote": [],
-  "Ext.log.writer.Writer": [],
   "Ext.mixin.Bindable": [],
   "Ext.mixin.Filterable": [],
   "Ext.mixin.Mixin": [],
@@ -695,10 +683,19 @@ Ext.ClassManager.addNameAlternateMappings({
   "Ext.viewport.WindowsPhone": [
     "Ext.viewport.WP"
   ],
-  "TouchApp.model.user": [],
+  "TouchApp.controller.MainController": [],
+  "TouchApp.model.Departure": [],
+  "TouchApp.model.Provider": [],
+  "TouchApp.model.Station": [],
+  "TouchApp.model.User": [],
+  "TouchApp.store.Departures": [],
+  "TouchApp.store.Providers": [],
+  "TouchApp.store.Stations": [],
+  "TouchApp.store.Users": [],
   "TouchApp.view.Carousel": [],
+  "TouchApp.view.DepartureList": [],
   "TouchApp.view.Main": [],
-  "TouchApp.view.form": []
+  "TouchApp.view.Settings": []
 });
 
 Ext.ClassManager.addNameAliasMappings({
@@ -1339,17 +1336,6 @@ Ext.ClassManager.addNameAliasMappings({
   "Ext.layout.wrapper.BoxDock": [],
   "Ext.layout.wrapper.Dock": [],
   "Ext.layout.wrapper.Inner": [],
-  "Ext.log.Base": [],
-  "Ext.log.Logger": [],
-  "Ext.log.filter.Filter": [],
-  "Ext.log.filter.Priority": [],
-  "Ext.log.formatter.Default": [],
-  "Ext.log.formatter.Formatter": [],
-  "Ext.log.formatter.Identity": [],
-  "Ext.log.writer.Console": [],
-  "Ext.log.writer.DocumentTitle": [],
-  "Ext.log.writer.Remote": [],
-  "Ext.log.writer.Writer": [],
   "Ext.mixin.Bindable": [],
   "Ext.mixin.Filterable": [],
   "Ext.mixin.Mixin": [],
@@ -1490,15 +1476,26 @@ Ext.ClassManager.addNameAliasMappings({
   "Ext.viewport.Ios": [],
   "Ext.viewport.Viewport": [],
   "Ext.viewport.WindowsPhone": [],
-  "TouchApp.model.user": [],
+  "TouchApp.controller.MainController": [],
+  "TouchApp.model.Departure": [],
+  "TouchApp.model.Provider": [],
+  "TouchApp.model.Station": [],
+  "TouchApp.model.User": [],
+  "TouchApp.store.Departures": [],
+  "TouchApp.store.Providers": [],
+  "TouchApp.store.Stations": [],
+  "TouchApp.store.Users": [],
   "TouchApp.view.Carousel": [
     "widget.MyCarousel"
+  ],
+  "TouchApp.view.DepartureList": [
+    "widget.DepartureList"
   ],
   "TouchApp.view.Main": [
     "widget.main"
   ],
-  "TouchApp.view.form": [
-    "widget.form"
+  "TouchApp.view.Settings": [
+    "widget.Settings"
   ]
 });
 

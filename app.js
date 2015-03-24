@@ -56,7 +56,6 @@ Ext.application({
      * @param failCallback
      */
     preCacheStores: function(callback,failCallback) {
-        debugger;
         var me = this;
         var storesToCache=3;
         var failure = false;
@@ -65,7 +64,6 @@ Ext.application({
             failCallback = Ext.emptyFn;
         }
         Controller_StationDepartures.getDepartures(function (result,response,success) {
-            debugger;
             if (!success) {
                 failure = true;
             } else {
@@ -149,7 +147,7 @@ Ext.application({
 
         Ext.onReady(function () {
             Ext.Loader.loadScriptFile(
-                    'http://127.0.0.1/backend/ext-direct/getConfig',
+                    'http://steveetm.hu/backend/ext-direct/getConfig',
                     Ext.bind(me.onDirectApiLoaded, me),
                     Ext.bind(me.onDirectApiFailed, me)
                     );
