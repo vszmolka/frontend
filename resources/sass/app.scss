@@ -11,5 +11,7 @@ $carousel-indicator-size: 15px;
 @include sencha-carousel-indicator-ui( 'custom' , red, 'linear-gradient', green, 'linear-gradient' );
 
 
-// Examples of using the icon mixin:
+// Examples of using the icon mixin:                    k
 // @include icon('user');
+
+@import 'override';
