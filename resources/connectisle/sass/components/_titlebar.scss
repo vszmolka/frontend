@@ -1,0 +1,20 @@
+.ci-titlebar {
+    background-color: $base-color;
+    background-image: none;
+
+    .x-title {
+        text-indent: -9999px;
+
+        &:after {
+            content: '';
+            width: 145px;
+            height: 28px;
+            position: absolute;
+            top: 9px;
+            left: 50%;
+            margin-left: -70px;
+            background: url(/resources/connectisle/assets/logo.png) no-repeat;
+            background-size: 100%;
+        }
+    }
+}

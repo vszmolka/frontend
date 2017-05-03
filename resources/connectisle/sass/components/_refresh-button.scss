@@ -1,0 +1,23 @@
+.ci-refresh-btn {
+    width: 90%;
+    background: $highlight-color;
+    color: #fff;
+    font-size: 1.1em;
+    position: fixed;
+    bottom: 1em;
+    left: 5%;
+    padding: .25em 0;
+    border: 0;
+    border-bottom: 2px solid darken($highlight-color, 5%);
+    border-radius: 0;
+    text-align: center;
+
+    .x-button-label {
+        &:before {
+            content: '\f021';
+            font-family: $icon-font-family;
+            color: #111;
+            margin-right: .5em;
+        }
+    }
+}

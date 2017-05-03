@@ -5,7 +5,6 @@ Ext.define('TouchApp.controller.MainController', {
     extend: 'Ext.app.Controller',
 
     config: {
-
         control: {
             'carousel[itemId="departurecarousel"]': {
                 'activeitemchange': 'onCarouselActiveItemChange'
@@ -23,7 +22,6 @@ Ext.define('TouchApp.controller.MainController', {
             '*[itemId="downloadData"]': {
                 tap: 'onTapDownloadData'
             }
-
         }
     },
     /**
@@ -45,7 +43,6 @@ Ext.define('TouchApp.controller.MainController', {
             me.selectedProviders.push(records[0].data.idProvider);
         }
 
-
         var departureLists = Ext.ComponentQuery.query('DepartureList');
         if (2 > -1) {
             departureLists.forEach(function (departureList) {
@@ -53,6 +50,7 @@ Ext.define('TouchApp.controller.MainController', {
             });
         }
     },
+
     onStationSelectInitialize: function (select) {
         console.log('select initialized');
         var Stations = [{
@@ -61,8 +59,8 @@ Ext.define('TouchApp.controller.MainController', {
         }].concat(Ext.JSON.decode(localStorage.getItem('StationsCache')));
 
         select.getStore().loadData(Stations);
-
     },
+
     onStationSelectChange: function (select, newValue) {
         console.log('cahnge happend');
         var departureLists = Ext.ComponentQuery.query('DepartureList');
@@ -92,11 +90,13 @@ Ext.define('TouchApp.controller.MainController', {
 
         }
 
-        carousel.up('tabpanel').down('titlebar').setTitle(msg + postfix);
+        carousel.up('panel').down('#ci-list-title').setHtml(msg + postfix);
     },
+
     onCarouselActiveItemChangeactive: function (scope, value, oldValue, eOpts) {
         console.log('activated carousel');
     },
+
     initConfig: function () {
         var me = this;
         me.selectedProviders = [];
@@ -105,8 +105,8 @@ Ext.define('TouchApp.controller.MainController', {
             Ext.bind(me.setTime,me)();
         },1000*60);
         me.callParent(arguments);
-
     },
+
     setTime: function() {
         var me = this;
         var date = new Date()

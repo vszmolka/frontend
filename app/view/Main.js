@@ -4,8 +4,9 @@
  */
 
 Ext.define('TouchApp.view.Main', {
-    extend: 'Ext.tab.Panel',
+    extend: 'Ext.Panel',
     xtype: 'main',
+   
     requires: [
         'Ext.TitleBar',
         'Ext.Video',
@@ -16,6 +17,10 @@ Ext.define('TouchApp.view.Main', {
         'TouchApp.store.Stations'
     ],
     config: {
+        layout: {
+            type: 'vbox',
+            align: 'stretch'
+        },
         listeners: {
             /**
              * We have to "disable" the last tab, as it only servers as a download button. So, if the clicked tab is the last, prevent the setActiveItem to finish.
@@ -29,7 +34,7 @@ Ext.define('TouchApp.view.Main', {
                         TouchApp.app.getApplication().preCacheStores(function() {
                             Ext.Msg.alert('Refreshed every store');
                         },function() {
-                            Ext.Msg.alert('Failed to download new data','Please check your network connection');
+                            Ext.Msg.alert('Failed to download new data', 'Please check your network connection');
                         });
                         return false;
                     }
@@ -38,71 +43,73 @@ Ext.define('TouchApp.view.Main', {
             }
         },
 
-        tabBarPosition: 'bottom',
-        items: [{
-            title: 'Departures',
-            iconCls: 'home',
-            cls: 'cards',
-            defaults: {
-                flex: 1
-            },
-            layout: {
-                type: 'vbox',
-                align: 'stretch'
-            },
-            items: [{
-                docked: 'top',
-                xtype: 'titlebar',
-                //This is not the best place for this nor the best method. The controller should have a common title generator function.
-                title: function() { var postfix = '';
+        items: [
+        // Titlebar component
+        {
+            docked: 'top',
+            xtype: 'titlebar',
+            title: 'Connectisle',
+            cls: 'ci-titlebar'
+        },
 
-                    var date = new Date()
-                    postfix = ' after ' + ('0' + date.getHours()).slice(-2) + ':' + ('0' + date.getMinutes()).slice(-2) + ':' + ('0' + date.getSeconds()).slice(-2)
-
-                    return 'Departures today, after ' + postfix}()
-            }, {
-                docked: 'top',
-                xtype: 'selectfield',
-                fieldLabel: 'Departure',
-                itemId: 'stationSelect',
-                store: Ext.create('TouchApp.store.Stations'),
-                displayField: 'name',
-                valueField: 'idStation',
-                height: 25
-            }, {
-                xtype: 'MyCarousel',
-                itemId: 'departurecarousel'
-            }]
+        // Filter components
+        {
+            docker: 'top',
+            xtype: 'panel',
+            cls: 'ci-app-title',
+            html: 'When is the next boat?'
         }, {
-            title: 'Settings',
-            iconCls: 'settings',
-            cls: 'cards',
-            defaults: {
-                flex: 1
-            },
-            layout: {
-                type: 'vbox',
-                align: 'stretch'
-            },
-            items: [{
-                docked: 'top',
-                xtype: 'titlebar',
-                title: 'Settings'
-            }, {
-                xtype: 'Settings'
-            }]
+            //docked: 'top',
+            xtype: 'selectfield',
+            fieldLabel: 'Departure',
+            itemId: 'stationSelect',
+            store: Ext.create('TouchApp.store.Stations'),
+            displayField: 'name',
+            valueField: 'idStation',
+            height: 25
         }, {
-            title: 'Download data',
-            itemId: 'downloadData',
-            iconCls: 'refresh',
-            defaults: {
-                flex: 1
+            //docked: 'top',
+            xtype: 'selectfield',
+            fieldLabel: 'Provider',
+            itemId: 'providerSelect',
+            store: Ext.create('TouchApp.store.Providers'),
+            displayField: 'name',
+            valueField: 'idProvider',
+            height: 25,
+            listeners: {
+                initialize: function () {
+                    var me = this;
+                    //Load the store with the cached data.
+                    var Providers= Ext.JSON.decode(localStorage.getItem('ProvidersCache'));
+                    me.getStore().loadData(Providers);
+                }
             },
-            layout: {
-                type: 'vbox',
-                align: 'stretch'
-            }
+            store: Ext.create('TouchApp.store.Providers'),
+            config: {
+                itemId: 'Providers',
+                itemTpl: '{name}'
+            },
+            itemTpl: '{name}'
+        }, {
+            xtype: 'panel',
+            itemId: 'ci-list-title',
+            cls: 'ci-list-title',
+            html: function() {
+                var postfix = '';
+                var date = new Date();
+                
+                postfix = ' after ' + ('0' + date.getHours()).slice(-2) + ':' + ('0' + date.getMinutes()).slice(-2).slice(-2)
 
+                return 'Sailings today, ' + postfix}()
+        }, {
+            xtype: 'MyCarousel',
+            flex: 1,
+            itemId: 'departurecarousel'
+        }, {
+            xtype: 'button',
+            cls: 'ci-refresh-btn',
+            itemId: 'refreshbutton',
+            html: 'Refresh data'
         }]
     }
 });

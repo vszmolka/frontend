@@ -1,0 +1,45 @@
+Connectisle Mobile App
+======================
+
+Trial project, Csaba Marosi
+03/05/2017
+
+------------------------------------------
+
+The app I received was a working prototype of something called "Isle of Wight Travel Connections Mobile App". Ben told me to think about this tiny project as something that could be uploaded to an actual app store down the road, my first thought was: okay, let's rename this thing. :)
+
+I came up with the name Connectisle – it's playing around with the words connect, connectile and isle.
+
+Then I did a 10-minute research on dribbble and Behance using different variations of the "travel app" keyword. After getting some design inspiration, I started to make notes for myself about the parts of the prototype that needed to be changed. Ben liked almost all of these ideas, so I started to create a simple wireframe in Photoshop based on them. I ended up finishing the whole thing as a "final" design right before lunch. :)
+
+
+Some major design decisions I made during the process:
+------------------------------------------------------
+ * In general, I chose some contrasting Material Design colours to make it much more elegant and modern.
+ * To make the app look more up-to-date, I created a simple logo for it and sticked it into a fixed header.
+ * I dropped the bottom tab navigation bar, I think they were not neccessary. As we've discussed with Ben, the user has no interest in diving into any settings using an app this size. On top of that, the whole settings screen consisted of only one select field that was really easy to implement inside the home screen filters.
+ * I dropped the dotted navigation bar from the bottom – I think it was a bit confusing, a simple previous/next type of navigation should do the trick here (in addition to swiping left or right).
+ * I made the list of departure dates more "timetable-like", with emphasis on the actual time the next ship is leaving.
+
+
+Development
+-----------
+After lunch, I dived immediately into coding, following the "low hanging fruits first" methodology, building the trivial parts of the project. Panna, Adam and Istvan helped me a lot in discovering the structure and custom parts of ExtJS that I have never worked before.
+
+After about an hour, I had my colours, fonts and some design details all set up. The difficult part was understanding ExtJS and the way it handles components, panels, etc. The "finished" product by the end of the day is nothing to be ashamed of, I think: it looks okay, feels okay, the major features are working okay, a few days of frontend coding could really make it a loveable, usable app.
+
+
+Things that are ready:
+----------------------
+ * There is a finished design, with some added extra features that Ben requested in the middle of the day :)
+ * The frontend itself looks much nicer, I managed to finish implementing around 70% of the design
+ * You can select your station of departure
+ * You can swipe left or right to look at other days
+
+
+Things that don't work yet:
+---------------------------
+ * You can select a provider from the filters, but this field should be a multi-select component
+ * In the design, the closest departure is a bit bigger and more emphasised than the others, and we should also display the company logo of the ferry prodvider in it
+ * Unfortunately I didn't have time to implement the actual refreshing that used to belong to the tab bar
+

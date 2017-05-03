@@ -6,7 +6,7 @@ Ext.define('TouchApp.view.DepartureList', {
     extend: 'Ext.dataview.List',
     requires: ['Ext.dataview.List'],
     xtype: 'DepartureList',
-
+    cls: 'ci-departures',
 
     initialize: function () {
         var me = this;
@@ -59,7 +59,6 @@ Ext.define('TouchApp.view.DepartureList', {
 
         //This is where the component own list of timetable finally constructed
         var filteredDepartures = Departures.filter(function (item, key) {
-
             if (item.dow == me.config.dow) {
                 //Are there any providers to filter to?
                 if (selectedProviders.length > 0) {
@@ -71,6 +70,7 @@ Ext.define('TouchApp.view.DepartureList', {
                     return item;
                 }
             }
+
             //If the component dow=0, then its special, have to merge with current days timetables.
             if (me.config.dow == 0) {
                 var d = new Date();
@@ -84,34 +84,32 @@ Ext.define('TouchApp.view.DepartureList', {
                         return item;
                     }
                 }
-
             }
 
         });
-
         me.getStore().setData(filteredDepartures);
-
     },
+
     filterByAfterTime: function (time) {
         var me = this;
         me.getStore().clearFilters();
-
     },
 
     config: {
         store: null, //Each departureList must have its own store instance
         itemTpl: new Ext.XTemplate('' +
         '<tpl if="this.getTime(time,dow)">' +
-        '<div style="color: gray;">' +
+        '<div class="ci-departures__item">' +
         '<tpl else>' +
-        '<div style="color: blue;">' +
+        '<div class="ci-departures__item ci-departures__item--alt">' +
         '</tpl>' +
-        'At {time} , {providerName} \'s ferry will departure from <b>{stationName}</b> to <b>{stationNameTo}</b></div>', {
+        '<div class="ci-departures__item__time">at <b>{time}</b><br /><span class="ci-departures__item__provider">{providerName}</span></div>' +
+        '<div class="ci-departures__item__stations">from <b>{stationName}</b><br />to <b>{stationNameTo}</b></div>', {
             getTime: function (time,dow) {
                 return ((TouchApp.app.getController('TouchApp.controller.MainController').currentTime > time));
             }
         }),
-        grouped: true,
+        grouped: false,
         disableSelection: true,
         mode: 'SIMPLE'
     }

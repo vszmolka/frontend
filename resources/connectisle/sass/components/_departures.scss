@@ -1,0 +1,41 @@
+.ci-departures {
+    flex: 1;
+}
+
+.ci-list-title {
+    font-size: 1.35em;
+    font-weight: bold;
+    color: $highlight-color;
+    margin: .7em 0 .4em;
+    padding: 0 .5em;
+}
+
+.ci-departures__item {
+    display: flex;
+    font-size: .9em;
+
+    &__time {
+        flex-basis: 40%;
+        line-height: 1.3;
+        padding-right: 1.5em;
+
+        b {
+            font-size: 1.3em;
+            font-weight: bold;
+        }
+    }
+
+    &__provider {
+        font-size: .8em;
+        color: $gray-text;
+    }
+
+    &__stations {
+        color: $gray-text;
+        line-height: 1.8;
+
+        b {
+            color: $text-color;
+        }
+    }
+}

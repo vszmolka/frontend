@@ -1,13 +1,10 @@
 /**
  * This is our carousel component, which have 8 departure lists.
- *
  */
 Ext.define('TouchApp.view.Carousel', {
     extend: 'Ext.Carousel',
     xtype: 'MyCarousel',
     ui: 'custom',
-
-
 
     config: {
         items: [
@@ -19,18 +16,15 @@ Ext.define('TouchApp.view.Carousel', {
             {xtype: 'DepartureList', title: 'Departures on Friday', dow: 5},
             {xtype: 'DepartureList', title: 'Departures on Saturday', dow: 6},
             {xtype: 'DepartureList', title: 'Departures on Sunday', dow: 7}
-
         ],
+        indicator: false,
         itemId: 'departurecarousel'
     },
 
     listeners: {
         activate: function () {
             var me = this;
-
-
         }
     }
-
 });
 

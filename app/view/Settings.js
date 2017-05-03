@@ -10,7 +10,6 @@ Ext.define('TouchApp.view.Settings', {
         title: 'Global preferences',
         layout: {
             type: 'vbox'
-
         },
         flex: 1,
         scrollable: false,
@@ -23,7 +22,6 @@ Ext.define('TouchApp.view.Settings', {
                 mode: 'MULTI',
                 itemId: 'providerSelect',
                 listeners: {
-
                     initialize: function () {
                         var me = this;
                         //Load the store with the cached data.
@@ -33,14 +31,10 @@ Ext.define('TouchApp.view.Settings', {
                 },
                 store: Ext.create('TouchApp.store.Providers'),
                 config: {
-
                     itemId: 'Providers',
                     itemTpl: '{name}'
-
                 },
-
                 itemTpl: '{name}'
-
             }
         ]
     }

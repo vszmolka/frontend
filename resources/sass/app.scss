@@ -1,5 +1,5 @@
-$base-color: #b1ff10;
-$carousel-indicator-size: 15px;
+// Custom variables for Connectisle app frontend
+@import '../connectisle/sass/variables';
 
 // The following two lines import the default Sencha Touch theme. If you are building
 // a new theme, remove them and the add your own CSS on top of the base CSS (which
@@ -7,11 +7,9 @@ $carousel-indicator-size: 15px;
 @import 'sencha-touch/default';
 @import 'sencha-touch/default/all';
 
-// Custom code goes here..
-@include sencha-carousel-indicator-ui( 'custom' , red, 'linear-gradient', green, 'linear-gradient' );
-
-
-// Examples of using the icon mixin:                    k
-// @include icon('user');
-
-@import 'override';
+// Custom stylesheets for Connectisle app frontend
+@import '../connectisle/sass/components/titlebar';
+@import '../connectisle/sass/components/filters';
+@import '../connectisle/sass/components/navigation';
+@import '../connectisle/sass/components/departures';
+@import '../connectisle/sass/components/refresh-button';
