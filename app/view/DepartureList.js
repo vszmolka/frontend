@@ -8,12 +8,15 @@ Ext.define('TouchApp.view.DepartureList', {
     xtype: 'DepartureList',
 
 
+
     initialize: function () {
         var me = this;
         me.setStore(Ext.create('TouchApp.store.Departures'));
         me.callParent(arguments);
         me.setDisableSelection(true);
         me.setupFilters();
+        me.setDeferEmptyText(false);
+       // me.setEmptyText('Empty');
         // me.getStore().load();
     },
     /**
@@ -59,22 +62,14 @@ Ext.define('TouchApp.view.DepartureList', {
 
         //This is where the component own list of timetable finally constructed
         var filteredDepartures = Departures.filter(function (item, key) {
-
-            if (item.dow == me.config.dow) {
-                //Are there any providers to filter to?
-                if (selectedProviders.length > 0) {
-                    //Lets check if the list
-                    if (selectedProviders.indexOf(Number(item.Providers_idProvider)) > -1) {
-                        return item;
-                    }
-                } else {
-                    return item;
-                }
-            }
             //If the component dow=0, then its special, have to merge with current days timetables.
             if (me.config.dow == 0) {
                 var d = new Date();
                 var n = d.getDay();
+                var currTime = d.getHours() +':'+d.getMinutes() + ":"+d.getSeconds();
+                if (item.time < currTime) {
+                    return false;
+                }
                 if (n == item.dow || item.dow == 0) {
                     if (selectedProviders.length > 0) {
                         if (selectedProviders.indexOf(Number(item.Providers_idProvider)) > -1) {
@@ -87,9 +82,28 @@ Ext.define('TouchApp.view.DepartureList', {
 
             }
 
+            if (item.dow == me.config.dow) {
+                var d = new Date();
+
+                //Are there any providers to filter to?
+                if (selectedProviders.length > 0) {
+                    //Lets check if the list
+                    if (selectedProviders.indexOf(Number(item.Providers_idProvider)) > -1) {
+                        return item;
+                    }
+                } else {
+                    return item;
+                }
+            }
+
+
         });
 
         me.getStore().setData(filteredDepartures);
+        if (filteredDepartures.length == 0) {
+            this.hasStoreLoaded = true;
+            this.showEmptyText();
+        }
 
     },
     filterByAfterTime: function (time) {
@@ -102,9 +116,9 @@ Ext.define('TouchApp.view.DepartureList', {
         store: null, //Each departureList must have its own store instance
         itemTpl: new Ext.XTemplate('' +
         '<tpl if="this.getTime(time,dow)">' +
-        '<div style="color: gray;">' +
+        '<div style="">' +
         '<tpl else>' +
-        '<div style="color: blue;>"' +
+        '<div style=">"' +
         '</tpl>' +
         'At {time} , {providerName} \'s ferry will departure from <b>{stationName}</b> to <b>{stationNameTo}</b></div>', {
             getTime: function (time,dow) {

@@ -1,4 +1,5 @@
-$base-color: #b1ff10;
+$base-color: #1e88e5;
+$color: #ffffff;
 $carousel-indicator-size: 15px;
 
 // The following two lines import the default Sencha Touch theme. If you are building
@@ -8,8 +9,106 @@ $carousel-indicator-size: 15px;
 @import 'sencha-touch/default/all';
 
 // Custom code goes here..
-@include sencha-carousel-indicator-ui( 'custom' , red, 'linear-gradient', green, 'linear-gradient' );
+@include sencha-carousel-indicator-ui( 'custom' , transparent, 'linear-gradient', transparent, 'linear-gradient' );
 
-
+.sajatclass:before {
+  content: "a";
+  font-family: Pictos;
+  margin-right: .5em;
+  font-size: 1em;
+  color: #ffffff;
+}
 // Examples of using the icon mixin:
 // @include icon('user');
+.x-toolbar-dark {
+  -webkit-box-shadow: 0px 5px 2px 0px rgba(0,0,0,0.15);
+  -moz-box-shadow: 0px 5px 2px 0px rgba(0,0,0,0.15);
+  box-shadow: 0px 5px 2px 0px rgba(0,0,0,0.15);
+}
+
+.x-toolbar-dark .x-title {
+  font-weight: normal;
+  text-shadow: none;
+  font-size: 1em;
+}
+
+.x-toolbar.x-docked-top {
+  border: none;
+}
+
+.x-tabbar-dark.x-docked-bottom .x-tab-active .x-button-icon:before {
+  color: #ffffff;
+}
+
+
+.x-form-label, .x-toolbar-dark {
+  background-color: #1e88e5;
+  color: #ffffff;
+  text-shadow: none;
+  background-image: none;
+}
+
+.x-form-label span {
+  font-size: 1em;
+  font-weight: normal;
+}
+
+.x-tabbar-dark {
+  background-color: #ffffff;
+  border: none;
+  background-image: none;
+}
+
+.x-tabbar-dark .x-tab {
+  color: #1e88e5;
+  border: 2px solid #1e88e5;
+}
+
+.x-tabbar-dark.x-docked-bottom .x-tab, .x-tabbar-dark.x-docked-bottom .x-tab-active {
+  background-image: none;
+  box-shadow: none;
+  text-shadow: none;
+  border-radius: 0;
+}
+
+.x-tabbar-dark.x-docked-bottom .x-tab-active {
+  color: #ffffff;
+  background-color: #1e88e5;
+}
+
+.x-label-align-left:first-child .x-form-label {
+  border-top-left-radius: 0;
+}
+
+.x-list {
+  background-color: #ffffff;
+}
+
+.x-container .x-button {
+  border-radius: 0;
+  color: #ffffff;
+  background-color: #1e88e5;
+  border: none;
+  box-shadow: none;
+  background-image: none;
+}
+
+.x-list .x-list-item.x-item-selected .x-dock-horizontal, .x-list .x-list-item.x-item-selected.x-list-item-tpl {
+  background-color: #1e88e5;
+  background-image: none;
+}
+
+.x-layout-box-item.x-sized > .x-body {
+  -webkit-box-shadow: 0px -5px 10px 0px rgba(0,0,0,0.15);
+  -moz-box-shadow: 0px -5px 10px 0px rgba(0,0,0,0.15);
+  box-shadow: 0px -5px 10px 0px rgba(0,0,0,0.15);
+}
+
+.x-list-normal .x-list-header {
+  background-color: #ffffff;
+  background-image: none;
+  border: none;
+  color: #000000;
+  text-shadow: none;
+  font-size: 1em;
+}

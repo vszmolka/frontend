@@ -64,7 +64,7 @@ Ext.define('TouchApp.controller.MainController', {
 
     },
     onStationSelectChange: function (select, newValue) {
-        console.log('cahnge happend');
+        console.log('change happend');
         var departureLists = Ext.ComponentQuery.query('DepartureList');
         if (newValue > -1) {
             departureLists.forEach(function (departureList) {
@@ -88,8 +88,8 @@ Ext.define('TouchApp.controller.MainController', {
         var msg= value.title;
         if (carousel.getActiveIndex() == 0) {
             var date = new Date()
-            postfix = ('0' + date.getHours()).slice(-2) + ':' + ('0' + date.getMinutes()).slice(-2) + ':' + ('0' + date.getSeconds()).slice(-2)
-
+            // postfix = ('0' + date.getHours()).slice(-2) + ':' + ('0' + date.getMinutes()).slice(-2) + ':' + ('0' + date.getSeconds()).slice(-2)
+            return 'Today ' + new Date().toLocaleDateString("en-EN");
         }
 
         carousel.up('tabpanel').down('titlebar').setTitle(msg + postfix);
